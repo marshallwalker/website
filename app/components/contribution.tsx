@@ -32,7 +32,7 @@ export const ContributionContainer = () => {
     },
     {
       name: "OpenVSX",
-      description: "endor-neutral open-source alternative to the Visual Studio Marketplace",
+      description: "Vendor-neutral open-source alternative to the Visual Studio Marketplace",
       repository: "https://github.com/eclipse/openvsx"
     },
     {
