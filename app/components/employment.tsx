@@ -13,11 +13,15 @@ interface EmployerProps {
 
 const Employer = ({ details: { company, title, term, description } }: EmployerProps) => {
   return (
-    <div className="w-full p-5">
-      <p className="text-xl">{company}</p>
-      <p>{term}</p>
-      <p>{title}</p>
-      <p>{description}</p>
+    <div className="flex flex-col justify-between border w-96 h-44 p-3 ">
+      <div className="flex justify-between">
+        <div>
+          <p className="text-2xl font-thin">{company}</p>
+          <p className="text-slate-600 font-light">{title}</p>
+        </div>
+        <p className="font-medium">{term}</p>
+      </div>
+      <p className="text-slate-600">{description}</p>
     </div>
   );
 }
@@ -26,7 +30,7 @@ export const Employment = () => {
   const employers = [
     {
       company: "Island Health",
-      title: "Material Management - Logistics Services",
+      title: "Logistics Services",
       term: "2016 - Present",
       description: "job details here...",
     },
@@ -64,7 +68,7 @@ export const Employment = () => {
 
   return (
     <Section title="Employment History">
-      <div className="flex w-full justify-evenly">
+      <div className="grid grid-cols-4 gap-4">
 
         {employers.map(employer =>
           <Employer key={employer.company} details={employer} />

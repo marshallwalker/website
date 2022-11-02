@@ -5,7 +5,7 @@ export interface SectionProps {
 
 export const Section = ({ title, children }: SectionProps) => {
     return (
-        <div className="flex flex-col justify-center items-center space-y-10">
+        <div className="flex flex-col justify-center items-center space-y-10 pt-16">
             <p className="text-5xl font-thin">{title}</p>
             {children}
         </div>
