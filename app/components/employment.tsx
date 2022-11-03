@@ -32,7 +32,7 @@ export interface EmploymentProps {
 
 export const Employment = ({ employers }: EmploymentProps) => {
   return (
-    <Section title="Employment History">
+    <Section title="Career">
       <div className="grid grid-cols-3 gap-6">
         {employers.map(employer =>
           <Item key={employer.company} employer={employer} />

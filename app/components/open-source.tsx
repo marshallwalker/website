@@ -14,14 +14,14 @@ interface ItemProps {
 const Item = ({ project: { name, description, repository, role } }: ItemProps) => {
   return (
     <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
-      <div className="flex justify-between items-center">
+      <div className="flex justify-between">
         <div>
           <p className="text-2xl font-thin">{name}</p>
           <p className="text-slate-600 font-light">{role}</p>
         </div>
         <a target="_blank" href={repository} className="text-sky-300" rel="noreferrer">Repository</a>
       </div>
-      <p className="text-slate-600 font-medium">{description}</p>
+      <p className="text-slate-600">{description}</p>
     </div>
   );
 }

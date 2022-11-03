@@ -13,7 +13,7 @@ const Item = ({ hobby: { title, description } }: ItemProps) => {
     return (
         <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
             <p className="text-xl font-thin">{title}</p>
-            <p className="text-medium">{description}</p>
+            <p className="text-slate-600">{description}</p>
         </div>
     );
 }

@@ -21,7 +21,7 @@ export const action: ActionFunction = async ({ request }) => {
 export default () => {
   const name = "marshall walker";
   const age = new Date().getFullYear() - 1997;
-  const bio = `I'm a ${age} year old Software Engineer from Canada, I've been interested in programming from the age of 12. I started programming in Java when Minecraft first came out. I have since expanded my passion into several disciplines ranging from backend infrastructure to frontend design.`;
+  const bio = `I'm ${age} years old, from Canada with what some might call an obsession for programming. I started with Java at the age of 14. I have since expanded my passion into several disciplines within the industry.`;
 
   const projects = [
     {
@@ -59,6 +59,18 @@ export default () => {
       description: "My personal website that you are currently viewing :)",
       repository: "https://github.com/marshallwalker/website",
       role: "owner",
+    },
+    {
+      name: "Speech To Text",
+      description: "A Minecraft mod for forge that allows a person to type in chat and issue commands with their voice, using Microsoft Azure Cognative Speech Services. Written especially for my friend who is an amputee.",
+      repository: "https://github.com/marshallwalker/stt",
+      role: "owner"
+    },
+    {
+      name: "UpDNS",
+      description: "A small utlity to update CloudFlare records when an IPV4 address changes.",
+      repository: "https://github.com/marshallwalker/updns",
+      role: "owner"
     }
   ];
 
@@ -67,31 +79,31 @@ export default () => {
       company: "Island Health",
       title: "Logistics Services",
       term: "2016 - Present",
-      description: "job details here...",
+      description: "I'm the level headed guy that keeps the 24/7 365 machine that is a hospital running (overnight). Anything from blood to the operating rooms, patient equipment, medications, charts, or stores items goes through me.",
     },
     {
       company: "Oreville Studios",
       title: "Senior Software Engineer",
       term: "2018 - Present",
-      description: "job details here...",
+      description: "Wrote and actively maintain a online work-from-home environment / build pipeline that enables a team of roughly 20 people to produce custom content for the Minecraft Marketplace in record time.",
     },
     {
       company: "AnubisMC",
       title: "Software Engineer",
       term: "2020 - 2021",
-      description: "job details here...",
+      description: "Deployed and managed a large scale Minecraft Network on kubernetes, as well as wrote custom build tools and plugins.",
     },
     {
       company: "FlexTerm",
       title: "Owner / Software Engineer",
       term: "2022 - Present",
-      description: "job details here...",
+      description: "Wrote a browser based terminal to access servers anywhere in the world via SSH, from any device without needing to copy SSH keys or session information.",
     },
     {
       company: "GSaaS",
       title: "Owner / Software Engineer",
       term: "2022 - Present",
-      description: "job details here...",
+      description: "Wrote a Game Servers as a Service solution allowing people to deploy vastly complex game server networks with ease.",
     },
     {
       company: "Eigenreclame",
@@ -104,31 +116,39 @@ export default () => {
   const hobbies = [
     {
       title: "Scuba Diving",
-      description: "PADI certified open water diver"
+      description: "PADI certified open water diver."
     },
     {
-      title: "Go-Kart Racing",
-      description: "info about that sport here"
+      title: "Kart Racing",
+      description: "Raced 2 & 4 stroke karts in Canada, United Kingdom & Russia, non-professionally."
     },
     {
       title: "Bouldering",
-      description: "info about that sport here"
+      description: "Occasionally climb rocks with colleauges from the hospital."
     },
     {
       title: "Working Out",
-      description: "training for competition power lifting"
+      description: "Training for competition power lifting."
     },
     {
       title: "Bartending",
-      description: "bartend at a racetrack for fun"
+      description: "I bartend various events for fun."
     },
     {
       title: "Learning",
-      description: "always learning"
+      description: "Always trying to pickup a new subject or play with the latest software."
     },
     {
       title: "Coffee",
-      description: "coffee hobbiest"
+      description: "I enjoy brewing and drinking coffee."
+    },
+    {
+      title: "Piano",
+      description: "Casual pianist with an interest for classical. I own a Yamaha P-125 and have the pleasure of playing on a steinway baby grand at the hospital."
+    },
+    {
+      title: "Gamer",
+      description: "I casually play Rust, Call Of Duty, Ranbow Six Seige, Valorant and a few other FPS games."
     }
   ];
 
