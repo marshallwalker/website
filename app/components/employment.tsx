@@ -1,17 +1,17 @@
 import { Section } from "./section";
 
-interface EmploymentDetails {
+export interface Employer {
   company: string;
   title: string;
   term: string;
   description: string;
 }
 
-interface EmployerProps {
-  details: EmploymentDetails;
+interface ItemProps {
+  employer: Employer;
 }
 
-const Employer = ({ details: { company, title, term, description } }: EmployerProps) => {
+const Item = ({ employer: { company, title, term, description } }: ItemProps) => {
   return (
     <div className="flex flex-col space-y-3 border shadow-mdx w-96 p-3">
       <div className="flex justify-between">
@@ -26,52 +26,16 @@ const Employer = ({ details: { company, title, term, description } }: EmployerPr
   );
 }
 
-export const Employment = () => {
-  const employers = [
-    {
-      company: "Island Health",
-      title: "Logistics Services",
-      term: "2016 - Present",
-      description: "job details here...",
-    },
-    {
-      company: "Oreville Studios",
-      title: "Senior Software Engineer",
-      term: "2018 - Present",
-      description: "job details here...",
-    },
-    {
-      company: "AnubisMC",
-      title: "Software Engineer",
-      term: "2020 - 2021",
-      description: "job details here...",
-    },
-    {
-      company: "FlexTerm",
-      title: "Owner / Software Engineer",
-      term: "2022 - Present",
-      description: "job details here...",
-    },
-    {
-      company: "GSaaS",
-      title: "Owner / Software Engineer",
-      term: "2022 - Present",
-      description: "job details here...",
-    },
-    {
-      company: "Eigenreclame",
-      title: "Software Engineer",
-      term: "2022 - Present",
-      description: "job details here...",
-    }
-  ]
+export interface EmploymentProps {
+  employers: Employer[];
+}
 
+export const Employment = ({ employers }: EmploymentProps) => {
   return (
     <Section title="Employment History">
       <div className="grid grid-cols-3 gap-6">
-
         {employers.map(employer =>
-          <Employer key={employer.company} details={employer} />
+          <Item key={employer.company} employer={employer} />
         )}
       </div>
     </Section>

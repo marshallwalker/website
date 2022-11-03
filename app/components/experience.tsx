@@ -33,7 +33,7 @@ const LanguageContainer = ({ languages }: LanguageContainerProps) => {
                 {languages.map(it => <LanguageItem key={it.name} language={it}/>)}
             </div>
         </div>
-    )
+    );
 }
 
 export const Experience = () => {
