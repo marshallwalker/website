@@ -13,7 +13,7 @@ interface EmployerProps {
 
 const Employer = ({ details: { company, title, term, description } }: EmployerProps) => {
   return (
-    <div className="flex flex-col justify-between border w-96 h-44 p-3 ">
+    <div className="flex flex-col space-y-3 border shadow-mdx w-96 p-3">
       <div className="flex justify-between">
         <div>
           <p className="text-2xl font-thin">{company}</p>
@@ -68,7 +68,7 @@ export const Employment = () => {
 
   return (
     <Section title="Employment History">
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-3 gap-6">
 
         {employers.map(employer =>
           <Employer key={employer.company} details={employer} />

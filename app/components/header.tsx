@@ -19,7 +19,7 @@ const Logo = () => {
 
 export const Header = () => {
     return (
-        <div className="flex justify-between bg-white p-4">
+        <div className="w-full flex justify-between bg-white p-4">
             <div className="flex justify-center items-center space-x-3">
                 <div className="w-10 h-10">
                     <Logo />
@@ -27,11 +27,14 @@ export const Header = () => {
                 <p className="font-medium text-xl">MARSHALL WALKER</p>
             </div>
 
-            <div className="flex justify-evenly space-x-3 pr-6">
-                <button className="font-medium uppercase">Home</button>
-                <button className="font-medium uppercase">About</button>
-                <button className="font-medium uppercase">Experience</button>
-                <button className="font-medium uppercase">Contact</button>
+            <div className="flex justify-evenly space-x-6 pr-6">
+                <button className="font-medium uppercase hover:text-slate-400">Home</button>
+                <button className="font-medium uppercase hover:text-slate-400">Experience</button>
+                <button className="font-medium uppercase hover:text-slate-400">Open Source</button>
+                <button className="font-medium uppercase hover:text-slate-400">Employment History</button>
+                <button className="font-medium uppercase hover:text-slate-400">Hobbies</button>
+                <button className="font-medium uppercase hover:text-slate-400">Education</button>
+                <button className="font-medium uppercase hover:text-slate-400">Contact</button>
             </div>
         </div>
     );

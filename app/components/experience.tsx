@@ -13,10 +13,10 @@ interface LanguageItemProps {
 
 const LanguageItem = ( { language: { name, proficiency } }: LanguageItemProps) => {
     return (
-        <li>
+        <div>
             <p className="font-medium">{name}</p>
             <Ducks count={proficiency}/>
-        </li>
+        </div>
     );
 }
 
@@ -26,12 +26,12 @@ interface LanguageContainerProps {
 
 const LanguageContainer = ({ languages }: LanguageContainerProps) => {
     return (
-        <div className="flex flex-col space-y-3">
-            <p className="text-2xl">Languages</p>
+        <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
+            <p className="text-2xl font-thin">Languages</p>
 
-            <ol className="space-y-3">
+            <div className="grid grid-cols-3 gap-6">
                 {languages.map(it => <LanguageItem key={it.name} language={it}/>)}
-            </ol>
+            </div>
         </div>
     )
 }
@@ -40,17 +40,17 @@ export const Experience = () => {
     return (
 
         <Section title="Experience">
-            <div className="flex flex-wrap w-full h-full justify-evenly">
+            <div className="grid grid-cols-3 gap-6">
 
                 <LanguageContainer
                     languages={[
                         {
                             name: "Kotlin",
-                            proficiency: 6,
+                            proficiency: 5,
                         },
                         {
                             name: "Java",
-                            proficiency: 6,
+                            proficiency: 5,
                         },
                         {
                             name: "Golang",
@@ -62,7 +62,7 @@ export const Experience = () => {
                         },
                         {
                             name: "TypeScript",
-                            proficiency: 6,
+                            proficiency: 5,
                         },
                         {
                             name: "JavaScript",
@@ -83,66 +83,66 @@ export const Experience = () => {
                     ]}
                 />
 
-                <div className="">
-                    <p className="text-2xl">Databases</p>
-                    <ol>
-                        <li>MySQL</li>
-                        <li>PostgreSQL</li>
-                        <li>MongoDB</li>
-                        <li>EdgeDB</li>
-                        <li>RethinkDB</li>
-                        <li>SQLite</li>
-                        <li>Redis</li>
-                    </ol>
+                <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
+                    <p className="text-2xl font-thin">Databases</p>
+                    <div className="grid grid-cols-3 gap-6">
+                        <div>MySQL</div>
+                        <div>PostgreSQL</div>
+                        <div>MongoDB</div>
+                        <div>EdgeDB</div>
+                        <div>RethinkDB</div>
+                        <div>SQLite</div>
+                        <div>Redis</div>
+                    </div>
                 </div>
 
-                <div>
-                    <p className="text-2xl">Frontend</p>
-                    <ol>
-                        <li>Remix</li>
-                        <li>React</li>
-                        <li>Next</li>
-                        <li>Nuxt</li>
-                        <li>Fresh</li>
-                        <li>Angular</li>
-                    </ol>
+                <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
+                    <p className="text-2xl font-thin">Frontend</p>
+                    <div className="grid grid-cols-3 gap-6">
+                        <div>Remix</div>
+                        <div>React</div>
+                        <div>Next</div>
+                        <div>Nuxt</div>
+                        <div>Fresh</div>
+                        <div>Angular</div>
+                    </div>
                 </div>
 
-                <div>
-                    <p className="text-2xl">Backend</p>
-                    <ol>
-                        <li>Spring</li>
-                        <li>Spark</li>
-                        <li>Ktor</li>
-                        <li>Express</li>
-                        <li>Gin</li>
-                        <li>Rocket</li>
-                        <li>Vaadin</li>
-                    </ol>
+                <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
+                    <p className="text-2xl font-thin">Backend</p>
+                    <div className="grid grid-cols-3 gap-6">
+                        <div>Spring</div>
+                        <div>Spark</div>
+                        <div>Ktor</div>
+                        <div>Express</div>
+                        <div>Gin</div>
+                        <div>Rocket</div>
+                        <div>Vaadin</div>
+                    </div>
                 </div>
 
-                <div>
-                    <p className="text-2xl">Containerization</p>
-                    <ol>
-                        <li>Kubernetes</li>
-                        <li>Docker</li>
-                    </ol>
+                <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
+                    <p className="text-2xl font-thin">Containerization</p>
+                    <div className="grid grid-cols-3 gap-6">
+                        <div>Kubernetes</div>
+                        <div>Docker</div>
+                    </div>
                 </div>
 
-                <div>
-                    <p className="text-2xl">Miscellaneous</p>
-                    <ol>
-                        <li>Git</li>
-                        <li>Cloudflare</li>
-                        <li>Digital Ocean</li>
-                        <li>Google Cloud</li>
-                        <li>AWS</li>
-                        <li>NodeJS</li>
-                        <li>Deno</li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ol>
+                <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
+                    <p className="text-2xl font-thin">Miscellaneous</p>
+                    <div className="grid grid-cols-3 gap-6">
+                        <div>Git</div>
+                        <div>Cloudflare</div>
+                        <div>Digital Ocean</div>
+                        <div>Google Cloud</div>
+                        <div>AWS</div>
+                        <div>NodeJS</div>
+                        <div>Deno</div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
                 </div>
             </div>
         </Section>

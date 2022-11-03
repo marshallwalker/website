@@ -1,7 +1,7 @@
 export const About = () => {
   const name = "marshall walker";
   const age = new Date().getFullYear() - 1997;
-  const bio = `I'm a ${age} year old Software Engineer, I've been interested in programming from the age of 12. I started programming in Java when Minecraft first came out. I have since expanded my passion into several disciplines randing from backend infrastructure to frontend design.`
+  const bio = `I'm a ${age} year old Software Engineer from Canada, I've been interested in programming from the age of 12. I started programming in Java when Minecraft first came out. I have since expanded my passion into several disciplines ranging from backend infrastructure to frontend design.`
 
   return (
     <div className="flex p-12 justify-center items-center space-x-10">
