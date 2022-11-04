@@ -41,9 +41,8 @@ const LanguageContainer = ({ languages }: LanguageContainerProps) => {
     );
 }
 
-export const Experience = () => {
+export const Skills = () => {
     return (
-
         <Section title="Skills">
             <div className="grid grid-cols-3 gap-6">
 
@@ -91,13 +90,13 @@ export const Experience = () => {
                 <div className="flex flex-col w-96 p-3 border shadow-mdx space-y-3">
                     <p className="text-2xl font-thin">Databases</p>
                     <div className="grid grid-cols-3 gap-3">
-                        <p>MySQL</p>
-                        <div>PostgreSQL</div>
-                        <div>MongoDB</div>
-                        <div>EdgeDB</div>
-                        <div>RethinkDB</div>
-                        <div>SQLite</div>
-                        <div>Redis</div>
+                        <a className="text-sky-500" href="https://mysql.com" target="_blank" rel="noreferrer">MySQL</a>
+                        <a className="text-sky-500" href="https://www.postgresql.org/" target="_blank" rel="noreferrer">PostgreSQL</a>
+                        <a className="text-sky-500" href="https://www.mongodb.com/" target="_blank" rel="noreferrer">MongoDB</a>
+                        <a className="text-sky-500" href="https://www.edgedb.com/" target="_blank" rel="noreferrer">EdgeDB</a>
+                        <a className="text-sky-500" href="https://rethinkdb.com/" target="_blank" rel="noreferrer">RethinkDB</a>
+                        <a className="text-sky-500" href="https://www.sqlite.org/index.html" target="_blank" rel="noreferrer">SQLite</a>
+                        <a className="text-sky-500" href="https://redis.io/" target="_blank" rel="noreferrer">Redis</a>
                     </div>
                 </div>
 

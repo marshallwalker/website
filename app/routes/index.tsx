@@ -4,7 +4,7 @@ import { Contact } from "~/components/contact";
 import { OpenSource } from "~/components/open-source";
 import { Education } from "~/components/education";
 import { Employment } from "~/components/employment";
-import { Experience } from "~/components/experience";
+import { Skills } from "~/components/skills";
 import { Hobbies } from "~/components/hobbies";
 import { Layout } from "~/components/layout";
 
@@ -149,6 +149,14 @@ export default () => {
     {
       title: "Gamer",
       description: "I casually play Rust, Call Of Duty, Ranbow Six Seige, Valorant and a few other FPS games."
+    },
+    {
+      title: "Electronics",
+      description: "I like to mess with micro-controllers, PCB design, and hardware reverse engineering."
+    },
+    {
+      title: "Home Automation",
+      description: "I dabble in writing / designing custom home automation software."
     }
   ];
 
@@ -168,7 +176,7 @@ export default () => {
         photo="./assets/me.jpg"
       />
 
-      <Experience />
+      <Skills />
       <OpenSource projects={projects} />
       <Employment employers={employers} />
       <Hobbies hobbies={hobbies} />

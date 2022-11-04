@@ -82,15 +82,15 @@ const Socials = () => {
 };
 
 interface AuthorizedKeyProps {
-  key: string;
+  authorizedKey: string;
 }
 
-const AuthorizedKey = ({ key }: AuthorizedKeyProps) => {
+const AuthorizedKey = ({ authorizedKey }: AuthorizedKeyProps) => {
   return (
     <div className="flex flex-col space-y-3 justify-evenly items-center border p-3">
       <p className="text-2xl font-thin">Authorized Key</p>
 
-      <p className="break-all text-slate-600 font-thin">{key}</p>
+      <p className="break-all text-slate-600 font-thin">{authorizedKey}</p>
     </div>
   );
 }
@@ -103,7 +103,7 @@ export const Contact = () => {
       <div className="grid grid-cols-3 gap-6 p-3">
         <Email />
         <Socials />
-        <AuthorizedKey key={key} />
+        <AuthorizedKey authorizedKey={key} />
       </div>
     </Section>
   );
