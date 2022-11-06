@@ -58,19 +58,19 @@ export default () => {
       name: "This Website",
       description: "My personal website that you are currently viewing :)",
       repository: "https://github.com/marshallwalker/website",
-      role: "owner",
+      role: "proprietor",
     },
     {
       name: "Speech To Text",
       description: "A Minecraft mod for forge that allows a person to type in chat and issue commands with their voice, using Microsoft Azure Cognative Speech Services. Written especially for my friend who is an amputee.",
       repository: "https://github.com/marshallwalker/stt",
-      role: "owner"
+      role: "proprietor"
     },
     {
       name: "UpDNS",
       description: "A small utlity to update CloudFlare records when an IPV4 address changes.",
       repository: "https://github.com/marshallwalker/updns",
-      role: "owner"
+      role: "proprietor"
     }
   ];
 
